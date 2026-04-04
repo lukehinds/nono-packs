@@ -1,0 +1,19 @@
+name: Publish claude pack
+on:
+  push:
+    tags:
+      - "claude-v*"
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: always-further/agent-sign@main
+        with:
+          package-name: claude
+          package-namespace: lukehinds
+          version: ${{ github.ref_name }}
+          path: claude
