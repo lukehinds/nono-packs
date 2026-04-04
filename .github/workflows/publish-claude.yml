@@ -19,3 +19,10 @@ jobs:
           package-version: ${{ github.ref_name }}
           package-path: claude
           registry-url: https://kszgig6yceav.share.zrok.io/api/v1
+          files: |
+            .claude-plugin/plugin.json
+            skills/nono-sandbox/SKILL.md
+            hooks/hooks.json
+            bin/nono-hook.sh
+            bin/nono-hook-bash.sh
+            package.json
