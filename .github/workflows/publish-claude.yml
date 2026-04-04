@@ -13,8 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: always-further/agent-sign@main
         with:
+          publish: "true"
           package-name: claude
           package-namespace: lukehinds
-          version: ${{ github.ref_name }}
-          path: claude
+          package-version: ${{ github.ref_name }}
+          package-path: claude
           registry-url: https://gkz3vwvp1zx8.share.zrok.io/api/v1
