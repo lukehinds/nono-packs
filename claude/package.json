@@ -20,11 +20,11 @@
       "path": "hooks/hooks.json"
     },
     {
-      "type": "script",
+      "type": "plugin",
       "path": "bin/nono-hook.sh"
     },
     {
-      "type": "script",
+      "type": "plugin",
       "path": "bin/nono-hook-bash.sh"
     }
   ]
