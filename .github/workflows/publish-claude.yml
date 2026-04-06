@@ -27,3 +27,5 @@ jobs:
             bin/nono-hook.sh
             bin/nono-hook-bash.sh
             package.json
+            README.md
+
